@@ -5,7 +5,7 @@ After around a year of messing about with distros, config files and vimscripts a
 # Inspiration
 
 The dude in the comment's section screaming 'I use arch btw' to everyone who will listen. Jk lightweight Fedora man here. Maybe I'll mess with Manjaro if i have a ton of time to myself and cant think of a project to mess around with(not likely).
-Also friends who tolerate my obsession with opaque background terminals.
+Also friends who tolerate my obsession with opaque background terminals, youre the real gs.
 
 # Setup
 
