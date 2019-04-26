@@ -1,6 +1,6 @@
 # @MSJawad's dotfiles
 
-After around a year of messing about with distros, config files and vimscripts and stuff i think im finally comfy rn with the setup. Using i3-gaps WM and lightweight vim customized for cpp and node.js. Gonna try to do a few node.js projects, as well as learn Golang on the side. The latter will involve a ton of additions to the current dotfiles
+After around a year of messing about with distros, config files and vimscripts and stuff I think im finally comfy right now with the setup. Using i3-gaps WM and lightweight vim customized for cpp and node.js. Gonna try to do a few node.js projects, as well as learn Golang on the side. The latter will involve a ton of additions to the current dotfiles
 
 # Inspiration
 
