@@ -9,4 +9,5 @@ Also friends who tolerate my obsession with opaque background terminals, youre t
 
 # Setup
 
-no setup configuration right now :(. Hoping to make one when work/school doesnt have a vice grip on me, and projects are finished(a little more likely than Manjaro but not by much)
+no setup configuration right now :(.  I use symlinks to most of the files on here so i never need it for my local machine(s)
+. Hoping to make one when work/school doesnt have a vice grip on me, and projects are finished(a little more likely than Manjaro but not by much).
