@@ -144,7 +144,7 @@ let g:solarized_termtrans = 1
 let g:solarized_termcolors = 16
 let g:solarized_contrast = "normal"
 let g:solarized_visibility = "normal"
-
+set t_Co=256
 hi Normal guibg=NONE ctermbg=NONE
 " }}}
 
@@ -217,6 +217,7 @@ let g:ycm_semantic_triggers = { 'c': 1, 'c++': 1,'cpp':1, 'javascript': 1 }
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 let NERDTreeShowHidden=1
+
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "}}}
