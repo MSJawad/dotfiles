@@ -106,8 +106,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'chrisbra/NrrwRgn'
   Plug 'https://github.com/wesQ3/vim-windowswap'
   Plug 'w0rp/ale'
-  Plug 'junegunn/fzf.vim'
   Plug 'itchyny/lightline.vim'
+  Plug 'junegunn/fzf.vim'
   Plug 'roxma/nvim-yarp'
   Plug 'tpope/vim-fugitive'
   Plug 'christoomey/vim-conflicted'
@@ -126,7 +126,7 @@ set stl+=%{ConflictedVersion()}
 
 syntax enable
 set background=dark
-colorscheme hybrid
+colorscheme gruvbox
 set laststatus=2
 set noshowmode
 
@@ -210,4 +210,13 @@ let g:ycm_semantic_triggers = { 'c': 1, 'c++': 1,'cpp':1, 'javascript': 1 }
 
 "Im a litle unsure what metric semantic_triggers uses, so ive included both c++
 "and cpp. will change with more info
+"}}}
+
+" NERDTree {{{
+
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+let NERDTreeShowHidden=1
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 "}}}
