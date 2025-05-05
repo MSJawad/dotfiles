@@ -96,7 +96,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-scripts/doxygentoolkit.vim',      { 'for': 'cpp' }
   Plug 'octol/vim-cpp-enhanced-highlight',    { 'for': 'cpp' }
   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-  Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
+  Plug 'fatih/vim-go'
   Plug 'elzr/vim-json', { 'for': 'json' }
   Plug 'cespare/vim-toml', { 'for': 'toml' }
   Plug 'w0ng/vim-hybrid'
@@ -112,7 +112,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'christoomey/vim-conflicted'
   Plug 'ternjs/tern_for_vim', { 'for': 'javascript' }
-  Plug 'Valloric/YouCompleteMe'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 
 call plug#end()
@@ -128,7 +128,6 @@ syntax enable
 set background=dark
 colorscheme gruvbox
 set laststatus=2
-set noshowmode
 
 let g:lightline = {
   \     'active': {
@@ -189,8 +188,6 @@ map ; :Files<CR>
   set wildignore+=*.sw?                            " Vim swap files
   set wildignore+=*.DS_Store                       " OSX bullshit
   set wildignore+=*.orig                           " Merge resolution files
-  let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-  let g:ycm_confirm_extra_conf = 1
 " }}}
 
 
@@ -199,17 +196,6 @@ map ; :Files<CR>
   set shiftwidth=4
   set expandtab
 
-"}}}
-
-
-"Synastic {{{
-let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
-let g:syntastic_cpp_check_header = 1
-let g:ycm_semantic_triggers = { 'c': 1, 'c++': 1,'cpp':1, 'javascript': 1 }
-
-"Im a litle unsure what metric semantic_triggers uses, so ive included both c++
-"and cpp. will change with more info
 "}}}
 
 " NERDTree {{{
